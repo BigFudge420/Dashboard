@@ -72,9 +72,6 @@ body{
     z-index: 1;
 }
 
-.main-container{
-    background-color: lightgray;
-}
 
 .dashboard{
     display: grid;
@@ -133,7 +130,7 @@ body{
     width: 4.5rem;
 }
 
-.deadpool2{
+.pfp{
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
@@ -175,4 +172,80 @@ button{
     background-color: #9c0909;
     color: white;
     font-weight: bold;
+}
+.main-container{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    scroll-behavior: auto;
+}
+
+.projects{
+    background-color: lightgray;
+    grid-area: 1/1/4/2;
+}
+
+.side-stuff{
+    grid-area: 1/2/4/3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    padding-bottom: 40px;
+}
+
+.title{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.para{
+    margin-top: -10px;
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+
+.text-box{
+    padding: 20px 10px;
+    border-bottom: 1px solid lightgray;
+    margin: auto 20px;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.announcements{
+    margin-top: -10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.trending .person:not(:first-child){
+    margin-top: -30px;
+}
+
+.trending .person:last-child{
+    margin-bottom: -10px;
+}
+
+.person{
+    display: flex;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.name-and-bio{
+    margin: auto 10px;
+}
+
+.announcements,
+.trending{
+    box-shadow: 2px 2px 4px gray;
 }
